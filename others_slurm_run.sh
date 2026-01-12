@@ -17,12 +17,12 @@ export PROMPT="Which one is bigger, 3.9 vs 3.12?"
 
 ml singularity/4.1.0 
 
-# HyperCLOVAX - 싱글 노드 동작 확인
+# AX (허깅페이스 분산) - 싱글 노드 동작 확인
 singularity run --nv container/torch290 \
 python test_others_hf.py \
-    --model_id naver-hyperclovax/HyperCLOVAX-SEED-Think-32B \
+    --model_id skt/A.X-K1 \
     --prompt "$PROMPT" \
-    --output_path results/hyperclovax_qa.json
+    --output_path results/sk_axk1_qa.json
 
 # Solar - 싱글 노드 동작 확인
 singularity run --nv container/torch290 \
@@ -38,12 +38,13 @@ python test_others_hf.py \
     --prompt "$PROMPT" \
     --output_path results/vaetki_qa.json
 
-# AX (허깅페이스 분산) - 싱글 노드 동작 확인
+# HyperCLOVAX - 싱글 노드 동작 확인
 singularity run --nv container/torch290 \
 python test_others_hf.py \
-    --model_id skt/A.X-K1 \
+    --model_id naver-hyperclovax/HyperCLOVAX-SEED-Think-32B \
     --prompt "$PROMPT" \
-    --output_path results/sk_axk1_qa.json
+    --output_path results/hyperclovax_qa.json
+
 
 
 

@@ -1,5 +1,3 @@
-"""Unified inference script for SK AX-K1 and other models."""
-
 import argparse
 import json
 import os
