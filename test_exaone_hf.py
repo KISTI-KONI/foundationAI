@@ -49,5 +49,5 @@ record = {
     "messages": messages,
 }
 
-out_path = Path("qa.json")
+out_path = Path("results/exaone_qa.json")
 out_path.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
