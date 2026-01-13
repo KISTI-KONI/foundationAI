@@ -1,0 +1,7 @@
+Bootstrap: localimage
+From: torch290.sif
+
+%post
+    apt-get update
+    apt-get install -y git
+    apt-get clean
