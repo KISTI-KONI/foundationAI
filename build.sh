@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+ml singularity/4.1.0
+
 # 실행 위치 기준으로 container 디렉토리로 이동
 cd container
 
