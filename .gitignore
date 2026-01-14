@@ -2,3 +2,4 @@
 *.out
 container/*.sif
 container/*/
+others/
